@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,7 +14,26 @@
 		10ACAD1625EF7967003CCCEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10ACAD1525EF7967003CCCEE /* Assets.xcassets */; };
 		10ACAD1925EF7967003CCCEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10ACAD1725EF7967003CCCEE /* LaunchScreen.storyboard */; };
 		10ACAD2025EF7986003CCCEE /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 10ACAD1F25EF7986003CCCEE /* .gitignore */; };
+		10ACAD2525EF7D2B003CCCEE /* PINOperation.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10ACAD2425EF7D2B003CCCEE /* PINOperation.xcframework */; };
+		10ACAD2625EF7D2B003CCCEE /* PINOperation.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 10ACAD2425EF7D2B003CCCEE /* PINOperation.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		10ACAD2925EF7D2E003CCCEE /* AsyncDisplayKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10ACAD2825EF7D2E003CCCEE /* AsyncDisplayKit.xcframework */; };
+		10ACAD2A25EF7D2E003CCCEE /* AsyncDisplayKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 10ACAD2825EF7D2E003CCCEE /* AsyncDisplayKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		10ACAD2725EF7D2B003CCCEE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				10ACAD2A25EF7D2E003CCCEE /* AsyncDisplayKit.xcframework in Embed Frameworks */,
+				10ACAD2625EF7D2B003CCCEE /* PINOperation.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		10ACAD0925EF7966003CCCEE /* TextureSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextureSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,6 +45,9 @@
 		10ACAD1825EF7967003CCCEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		10ACAD1A25EF7967003CCCEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		10ACAD1F25EF7986003CCCEE /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		10ACAD2425EF7D2B003CCCEE /* PINOperation.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = PINOperation.xcframework; path = TextureSample/Carthage/Build/PINOperation.xcframework; sourceTree = "<group>"; };
+		10ACAD2825EF7D2E003CCCEE /* AsyncDisplayKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = AsyncDisplayKit.xcframework; path = TextureSample/Carthage/Build/AsyncDisplayKit.xcframework; sourceTree = "<group>"; };
+		9FD11FF2C90294416D595C08 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +55,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10ACAD2925EF7D2E003CCCEE /* AsyncDisplayKit.xcframework in Frameworks */,
+				10ACAD2525EF7D2B003CCCEE /* PINOperation.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,6 +69,7 @@
 				10ACAD1F25EF7986003CCCEE /* .gitignore */,
 				10ACAD0B25EF7966003CCCEE /* TextureSample */,
 				10ACAD0A25EF7966003CCCEE /* Products */,
+				10ACAD2325EF7D2B003CCCEE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,8 +91,18 @@
 				10ACAD1525EF7967003CCCEE /* Assets.xcassets */,
 				10ACAD1725EF7967003CCCEE /* LaunchScreen.storyboard */,
 				10ACAD1A25EF7967003CCCEE /* Info.plist */,
+				9FD11FF2C90294416D595C08 /* Cartfile */,
 			);
 			path = TextureSample;
+			sourceTree = "<group>";
+		};
+		10ACAD2325EF7D2B003CCCEE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				10ACAD2825EF7D2E003CCCEE /* AsyncDisplayKit.xcframework */,
+				10ACAD2425EF7D2B003CCCEE /* PINOperation.xcframework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -80,6 +115,7 @@
 				10ACAD0525EF7966003CCCEE /* Sources */,
 				10ACAD0625EF7966003CCCEE /* Frameworks */,
 				10ACAD0725EF7966003CCCEE /* Resources */,
+				10ACAD2725EF7D2B003CCCEE /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
